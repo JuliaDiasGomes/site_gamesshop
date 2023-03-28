@@ -1,0 +1,155 @@
+* { /*configuração de exibição*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3, 
+form button /*colocar essa fonte no form button*/
+ { /*colocando fonte especial da google font*/
+    font-family: 'Bungee', cursive;
+    font-weight: normal; /*deixando a fonte mais magrinha*/
+}
+
+body, input, textarea { /*restante da fonte na pagina, dentro dos formulários de contato*/
+    font-family: 'Roboto', sans-serif;
+}
+
+header { /*configuração do cabeçalho*/
+    padding: 16px 0;
+    background-color: rgb(23, 43, 97);
+    color: rgb(236, 240, 241);
+}
+
+header h1,
+section h2 {
+    font-weight: normal;
+}
+
+header nav li { /*ajuste de posição dos links do cabeça*/
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px; /*fonte dos links*/
+}
+
+header nav li a { /*para colocar a cor nas opções, precisa digitar o a*/
+    color: rgb(236, 240, 241);
+    text-decoration: none; /*tirou o underline dos links*/
+
+}
+
+.container { /*ajuste de menu, dentro do container - config de posição*/
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container, /*a virgula serve para colocar um novo seletor, para ajuste de posição*/
+section .container { /*ajuste de posição do cabeçalho do container, que está dentro do header*/
+    display: flex;
+    align-items: center; /*centralizou os textos*/
+    justify-content: space-between; /*colocar os textos na direita*/
+}
+
+.brands-list img {
+    height: 24px; /*ajuste de tamanho máximo das logos*/
+}
+
+.brands-list li { /*ajuste para a lista de imagens ficar lado a lado*/
+    display: inline; /*display inline é para ficar lado a lado*/
+    margin-right: 8px;
+}
+
+section .container { /*após fazer o ajuste da vírgula (acima) no container, essa regra serve para ajustar melhor a posição de como fica o texto - no caso, vai sobrescrever o align-items:center do header container*/
+    align-items: flex-start; /*dessa forma,o conteudo fica a direita, começando pelo topo*/
+}
+
+/*correção e ajuste do texto, espaçamento etc: (abaixo) - precisa criar uma regra do section*/
+section {
+    padding: 24px 0;
+    }
+
+section h2 { /*criando uma margem para o título h2*/
+    margin-bottom: 16px;
+}
+
+section {
+    color:rgb(23, 43, 97); /*cor dos textos*/
+}
+
+section p {
+    margin-bottom: 8px; /*ajuste de margem dos parágrafos*/
+    
+}
+
+.store-front {
+    margin-right: 32px; /*espaço entre os ícones*/
+}
+
+.social-links img { /*ajuste de icones de social midia no tamanho menor, colocando o class no html*/
+    height: 24px;
+}
+
+.social-links li { /*colocando as imgs dos links lado a lado*/
+    display: inline;
+    margin-right: 8px;
+
+}
+
+.social-links li a { /*tirando a bolinha de lista dos elementos da tag a href de links*/
+    text-decoration: none;
+} 
+
+#contact .container { /*colocar toda a seção dos contatos com aparencia de colunas lado a lado*/
+    display: block;
+}
+
+.contact-methods { /*espaço entre os ícones*/
+    display: flex;
+    justify-content: space-between; /*aplicando espaçamento entre as subseções*/
+}
+
+/*ajustando o formulário*/
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px; /*espaçamento interno*/
+}
+
+
+form textarea {
+    resize: none; /*desabilitando a função de aumentar a caixinha do text area*/
+    height: 180px; /*tamanho da caixa de msg*/
+}
+
+section h3 {
+    margin-bottom: 16px; /*colocando espaçamento entre o título h3 e as seções*/
+}
+
+/*customizando formulário (cores, cor do botão)*/
+form button {
+    background-color: rgb(23, 43, 97);
+    color: rgb(236, 240, 241);
+    border: none;
+    cursor: pointer; /*fica a mãozinha quando passa o mouse por cima do botão*/
+}
+
+form button:hover { /*quando aperta enviar, o botão fica de outra cor*/
+    background-color: rgb(91, 104, 139);
+}
+
+input:focus, textarea:focus { /*ajuste da borda das caixinhas do formulário, quando se aperta/escreve*/
+    outline-color:rgb(23, 43, 97);
+}
+
+footer { /*estilizando o rodapé*/
+    background-color: rgb(23, 43, 97);
+    color: rgb(236, 240, 241);
+    padding: 16px 0;
+}

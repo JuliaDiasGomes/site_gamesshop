@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Shop - A sua loja de games</title>
+    <link rel="stylesheet" href="./main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">  <!-- link para a fonte -->
+
+
+</head>
+<body>
+    <header> <!-- ESSE É O CABEÇALHO DO SITE -->
+        <div class="container"> <!-- para organizar esse layout no css -->
+                <h1>Games Shop</h1> <!-- título da pagina -->
+            <nav> <!-- menu -->
+                <ul>
+                    <li>
+                        <a href="#about">Sobre a loja</a> <!-- colocando os ids nas sections, podemos colocar aqui no href as âncoras que levam até as infos -->
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about"> <!-- nova seção, para mostrar as logos -->
+        <div class="container">
+            <!-- criação de classe store-front no img para ajustar a imagem no css -->
+            <img class="store-front" src="./images/loja.jpg" alt="fachada da loja games shop" />
+            <div> <!-- para colocar um texto sobre a loja -->
+                <h2> Sobre a loja </h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque rerum odit necessitatibus velit, deserunt modi at blanditiis omnis praesentium rem asperiores aperiam soluta, nam, voluptates placeat eveniet dolorem fugit culpa!
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque rerum odit necessitatibus velit, deserunt modi at blanditiis omnis praesentium rem asperiores aperiam soluta, nam, voluptates placeat eveniet dolorem fugit culpa!
+                </p>
+            
+                <!-- inserção das logos -->
+                <ul class="brands-list"> <!-- criação de classe para ajustar no css --> 
+                    <li> <img src="./images/nintendo.png" alt="nintendo"> </li>
+                    <li> <img src="./images/xbox.png" alt="xbox"> </li>
+                    <li> <img src="./images/playstation.png" alt="playstation"> </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact"> <!-- nova seção para a parte de formulários -->
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-methods"> 
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required/> <!-- o required diz que é obrigatório -->
+                        <input type="email" placeholder="Seu e-mail" required />
+                        <input type="tel" placeholder="Seu telefone (opcional)" />
+                        <textarea placeholder="Sua mensagem" required></textarea> <!-- escrever msg -->
+                        <button type="submit">Enviar</button>  <!-- botão enviar -->
+                    </form>
+                </div>
+
+                <div> <!-- essa div é para acompanhar nos links -->
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" title="Siga-nos no Instagram"></a>
+                                <img src="./images/instagram.png" alt="logo do instagram" />
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook"></a>
+                                <img src="./images/facebook.png" alt="logo do facebook" />
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no Youtube"></a>
+                                <img src="./images/youtube.png" alt="logo do youtube" />
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha até nós!</h3>
+                    <p> Rua Francisco Jorge, 85 </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Games Shop - Todos os direitos reservados - 2023
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
